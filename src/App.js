@@ -12,7 +12,7 @@ function App() {
   const images = imagesArr.map((image, index) => {
     
     return (
-      <img
+  <img
         className="image-thumb"
         id={image.id}
         src={image.img}
@@ -20,6 +20,7 @@ function App() {
         key={index}
         onClick={() => handleClick(image.img)}
       />
+   
     );
   });
   return (

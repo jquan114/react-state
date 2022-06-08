@@ -10,6 +10,7 @@ body {
 .wrapper--images {
   width: 500px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .images {
@@ -17,23 +18,22 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
   margin-bottom: 15px;
 }
 
-.images-thumb {
-  flex:1;
-  height: 100px;
-  width: 100px;
-  display: block;
-  cursor: pointer;
-  object-fit:cover;
-  height:100px;
-  width: 100px;
+.image-thumb {
+  height:200px;
+  width: 350px;
 }
 
 #bigimage {
   height: 300px;
   width: 500px;
   object-fit:cover;
+}
+
+#thumbnails{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-gap:10px
 }
