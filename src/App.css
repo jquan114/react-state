@@ -28,10 +28,12 @@ body {
   display: block;
   cursor: pointer;
   object-fit:cover;
+  height:100px;
+  width: 100px;
 }
 
-#big-image {
+#bigimage {
   height: 300px;
-  width: 100%;
+  width: 500px;
   object-fit:cover;
 }

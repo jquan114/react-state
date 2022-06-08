@@ -5,17 +5,15 @@ import imagesArr from "./imageData";
 
 function App() {
   const [bigImage, setBigImage] = useState(imagesArr[0].img);
-  const handleClick = (imgUrl) => {
+  const handleClick = (imgURl) => {
     setBigImage(imgURl);
   };
 
   const images = imagesArr.map((image, index) => {
-    const imageClick = () => {
-      setBigImage(Data.img);
-    };
+    
     return (
       <img
-        className={"image-thumb"}
+        className="image-thumb"
         id={image.id}
         src={image.img}
         alt={image.city}
@@ -29,7 +27,7 @@ function App() {
       <h1> Cities Of the World</h1>
       <div id="wrapper">
         <div id="thumbnails">{images}</div>
-       { <img src={bigImage} id="bigimage" alt="bigImage" />}
+        <img src={bigImage} id="bigimage" alt="bigImage" />
       </div>
     </div>
   );
